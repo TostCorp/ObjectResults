@@ -1,0 +1,67 @@
+<Project>
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<NoWarn>CS7035</NoWarn>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<WarningLevel>9999</WarningLevel>
+		<AnalysisLevel>latest-all</AnalysisLevel>
+		<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<RestorePackagesWithLockFile>false</RestorePackagesWithLockFile>
+		<DisableImplicitNuGetFallbackFolder>true</DisableImplicitNuGetFallbackFolder>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<IncludeSymbols>True</IncludeSymbols>
+		<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="../../LICENSE" Pack="true" PackagePath="" />
+		<None Include="../../README.md" Pack="true" PackagePath="" />
+	</ItemGroup>
+
+	<PropertyGroup>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Authors>TostCorp</Authors>
+		<PackageProjectUrl>https://github.com/TostCorp/ObjectResults</PackageProjectUrl>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Roslynator.Analyzers" Version="4.10.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+			<_Parameter1>$(AssemblyName).Tests</_Parameter1>
+		</AssemblyAttribute>
+	</ItemGroup>
+
+</Project>

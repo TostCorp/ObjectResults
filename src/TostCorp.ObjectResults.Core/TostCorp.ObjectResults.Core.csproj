@@ -1,0 +1,7 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<ItemGroup>
+		<PackageReference Include="TostCorp.CollectionExtensions" Version="1.0.1" />
+	</ItemGroup>
+	
+</Project>

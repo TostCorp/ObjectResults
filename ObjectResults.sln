@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34707.107
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TostCorp.ObjectResults.Core", "src\TostCorp.ObjectResults.Core\TostCorp.ObjectResults.Core.csproj", "{102EF741-1F92-435A-869D-F617BD5A4BCA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B0A41752-9FCE-4CC8-8F92-B9BE6A2D532F}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		Directory.Build.props = Directory.Build.props
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TostCorp.ObjectResults", "src\TostCorp.ObjectResults\TostCorp.ObjectResults.csproj", "{DFE10F35-2DF2-4EA5-A5E9-7FDAE87C54D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{102EF741-1F92-435A-869D-F617BD5A4BCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{102EF741-1F92-435A-869D-F617BD5A4BCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{102EF741-1F92-435A-869D-F617BD5A4BCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{102EF741-1F92-435A-869D-F617BD5A4BCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFE10F35-2DF2-4EA5-A5E9-7FDAE87C54D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFE10F35-2DF2-4EA5-A5E9-7FDAE87C54D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFE10F35-2DF2-4EA5-A5E9-7FDAE87C54D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFE10F35-2DF2-4EA5-A5E9-7FDAE87C54D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {71E1C659-FB82-457A-9C8E-170BC5C36A12}
+	EndGlobalSection
+EndGlobal

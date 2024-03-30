@@ -10,30 +10,30 @@ using TostCorp.ObjectResults.Core.Types.Success;
 
 namespace TostCorp.ObjectResults;
 
-public static class ResultExtensions
+public static class ObjectResultExtensions
 {
-    public static IActionResult HandleResult(SuccessResult result)
+    public static IActionResult HandleResult(this SuccessResult result)
     {
         ArgumentNullException.ThrowIfNull(result);
-        
+
         return HandleSuccessResult(result);
     }
 
-    public static IActionResult HandleResult<T>(SuccessResult<T> result)
+    public static IActionResult HandleResult<T>(this SuccessResult<T> result)
     {
         ArgumentNullException.ThrowIfNull(result);
 
         return HandleTypedSuccessResult(result);
     }
 
-    public static IActionResult HandleResult(FailureResult result)
+    public static IActionResult HandleResult(this FailureResult result)
     {
         ArgumentNullException.ThrowIfNull(result);
 
         return HandleFailureResult(result);
     }
 
-    public static IActionResult HandleResult(OneOf<SuccessResult, FailureResult> result)
+    public static IActionResult HandleResult(this OneOf<SuccessResult, FailureResult> result)
     {
         ArgumentNullException.ThrowIfNull(result);
 
@@ -43,7 +43,7 @@ public static class ResultExtensions
             );
     }
 
-    public static IActionResult HandleResult<T>(OneOf<SuccessResult<T>, FailureResult> result)
+    public static IActionResult HandleResult<T>(this OneOf<SuccessResult<T>, FailureResult> result)
     {
         ArgumentNullException.ThrowIfNull(result);
 
@@ -53,7 +53,7 @@ public static class ResultExtensions
             );
     }
 
-    public static IActionResult HandleResult<T>(OneOf<SuccessResult<T>, SuccessResult, FailureResult> result)
+    public static IActionResult HandleResult<T>(this OneOf<SuccessResult<T>, SuccessResult, FailureResult> result)
     {
         ArgumentNullException.ThrowIfNull(result);
 

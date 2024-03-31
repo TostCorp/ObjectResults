@@ -13,7 +13,7 @@ jobs:
             security-events: write
             contents: write
             packages: write
-        uses: TostCorp/.github/jobs/pr-closed-nuget.yml
+        uses: TostCorp/.github/workflows/jobs/pr-closed-nuget.yml
         secrets:
             AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             NUGET_GITHUB_USERNAME: ${{ secrets.NUGET_GITHUB_USERNAME }}
